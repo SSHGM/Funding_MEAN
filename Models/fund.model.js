@@ -1,5 +1,5 @@
-const { default: mongoose } = require("mongoose");
-const db = require("mongoose");
+const mongoose  = require("mongoose");
+
 const Regsch = mongoose.Schema({
   Name: {
     type: String,
@@ -31,7 +31,7 @@ const Regsch = mongoose.Schema({
 });
 
 const Usersch = mongoose.Schema({
-  _id: ObjectId,
+ 
   firstName: {
     String,
   },

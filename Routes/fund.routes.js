@@ -1,5 +1,6 @@
-const express =require("express");
-const app = express()
+const express = require("express")
+const router = express.Router()
 const {get,post} = require("../Controllers/fund.controllers")
-app.get("/reg",get);
-app.post("/reg",post);
+router.get("/reg",get);
+router.post("/reg",post);
+module.exports =router;
